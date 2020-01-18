@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Regisrasi"
+    android:background="@color/brown">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+    android:layout_width="350dp"
+    android:layout_height="500dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="20dp"
+            android:foreground="@drawable/reg"/>
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/puih"
+       >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtusername"
+            android:hint="username"
+            android:inputType="textAutoComplete"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNama"
+            android:hint="Nama"
+            android:inputType="textAutoComplete"
+           />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtalamat"
+            android:hint="alamat"
+            android:inputType="textAutoComplete"
+           />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtEmail"
+            android:inputType="textAutoComplete"
+            android:hint="Email"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:hint="Password"
+            />
+
+        <Button
+            android:id="@+id/btnregis"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="5dp"
+            android:text="DAFTAR"
+           />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sudah Punya Akun ? " />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/btnLinkLogin"
+                android:text="Login Disini!"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+</LinearLayout>
